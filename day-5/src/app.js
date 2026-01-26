@@ -29,13 +29,13 @@ app.put('/:index',(req,res)=>{
 })
 
 // Update Description
-app.put('/:index',(req,res)=>{
+app.patch('/:index',(req,res)=>{
     notes[req.params.index].description = req.body.description
     res.send('description updated')
 })
 
 // Update Title
-app.put('/:index',(req,res)=>{
+app.patch('/:index',(req,res)=>{
     notes[req.params.index].title = req.body.title
     res.send('title updated')
 })
